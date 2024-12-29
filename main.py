@@ -18,8 +18,10 @@ def ping_server(server_url):
     except requests.RequestException as e:
         print(f"Failed to reach {server_url}. Error: {e}\n")
 
-if __name__ == "__main__":
-    server_url = "https://task-management-f8ag.onrender.com/health"
+if _name_ == "_main_":
+    server_url1 = "https://task-management-f8ag.onrender.com/health"
+    server_url2 = "https://reviewsystem24.onrender.com/health"
     while True:
-        ping_server(server_url)
-        time.sleep(60)  # Wait for 1 minute
+        ping_server(server_url1)
+        ping_server(server_url2)
+        time.sleep(300)  # Wait for 5 minute
